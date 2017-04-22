@@ -10,7 +10,6 @@ function fnHomeCtrl($scope, $http){
     $scope.Repos = [];
     $http.get('Contents/repos.json')
     .then(function(res){
-        console.log(res);
         $scope.Repos = res.data;
     });
 }
