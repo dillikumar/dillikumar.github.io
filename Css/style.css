@@ -1,0 +1,43 @@
+body {
+    background-color: #eaeceb;
+}
+
+/*Bootstrap overrides*/
+.navbar-inverse {
+    background-color: #5e2750;
+    border-color: #5e2750;
+    color: #fff;
+}
+.brand-name > a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: #f15d22;
+    text-decoration: none;
+}
+
+
+/* Custom */
+.margin-top-70 {
+    margin-top: 70px;
+}
+.padding-20 {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 5px;
+    background-color: #fff;
+    padding: 10px 0px;
+    border-top: 3px solid #f15d22;
+}
+
+.section-header {
+    margin-top: 0px;
+}
+
+.section-desc {
+    font-size: 12px;
+    
+}
