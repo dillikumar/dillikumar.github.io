@@ -1,5 +1,10 @@
 [
     {
+        "title": "Search Algorithms",
+        "description": "Search algorithms implementation using Javascript.",
+        "link": "https://github.com/dlipdhunter/SearchAlgorithms"
+    },
+    {
         "title": "Sorting Algorithms",
         "description": "Sorting algorithms implementation using Javascript.",
         "link": "https://github.com/dlipdhunter/SortingAlgorithms"
