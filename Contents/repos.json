@@ -8,10 +8,5 @@
         "title": "Sorting Algorithms",
         "description": "Sorting algorithms implementation using Javascript.",
         "link": "https://github.com/dlipdhunter/SortingAlgorithms"
-    },
-    {
-        "title": "AngularJS 1.x Sample",
-        "description": "A simple angularjs app with notifications",
-        "link": "https://github.com/dlipdhunter/FriendsApp"
     }
 ]
