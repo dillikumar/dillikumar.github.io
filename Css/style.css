@@ -1,43 +1,104 @@
-body {
-    background-color: #eaeceb;
+.navbar-default {
+    background-color: #673ab7;
+    border-color: #673ab7;
 }
-
-/*Bootstrap overrides*/
-.navbar-inverse {
-    background-color: #5e2750;
-    border-color: #5e2750;
+.navbar-default .navbar-brand {
     color: #fff;
 }
-.brand-name > a {
+.navbar-default .navbar-brand:hover {
+    color: yellow;
+}
+.navbar-default .navbar-brand:visited {
+    color: yellow;
+}
+.navbar-default .navbar-nav>li>a {
     color: #fff;
-    text-decoration: none;
 }
-a:hover {
-    color: #f15d22;
-    text-decoration: none;
+.navbar-default .navbar-nav>li>a:hover {
+    color: yellow;
 }
-
-
-/* Custom */
-.margin-top-70 {
-    margin-top: 70px;
+.navbar-default .navbar-toggle {
+    border-color: #fff;
 }
-.padding-20 {
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 5px;
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
-    padding: 10px 0px;
-    border-top: 3px solid #f15d22;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+/* general styles */
+html, body {
+height: 100%;
+width: 100%;
+}
+h1, h2, h3, h4{
+color:#ffffff;
+}
+h5, h6 {
+    color:yellow;
+}
+/* padded section */
+.pad-section {
+padding: 50px 0;
+}
+.pad-section img {
+width: 100%;
+}
+/* vertical-centered text */
+.text-vcenter {
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+}
+.text-vcenter h1 {
+font-size: 4.5em;
+font-weight: 700;
+margin: 0;
+padding: 0;
+}
+/* additional sections */
+#about {
+background-color: rebeccapurple;
+display: table;
+height: 100%;
+position: relative;
+width: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
-.section-header {
-    margin-top: 0px;
+#projects {
+ background-color: deeppink;
+display: table;
+height: 800px;
+position: relative;
+width: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
-
-.section-desc {
-    font-size: 12px;
-    
+#repos .panel {
+opacity: 0.85;
+}
+footer {
+padding: 20px 0;
+}
+footer .glyphicon {
+color: #333333;
+font-size: 60px;
+}
+footer .glyphicon:hover {
+color: #306d9f;
+}
+.profile-pic {
+    width:200px;
+    height:200px;    
+    border-radius: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 5px;
+}
+.button-group iframe{
+    vertical-align: middle;
 }

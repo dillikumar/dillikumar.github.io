@@ -14,40 +14,73 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
   <script src="Application/app.js"></script>
-
+  
   <title>dlipdhunter.github.io by dillipkumar</title>
 
-  <style>
-    
-  </style>
 </head>
 
 <body ng-app="dlipdhunter.github.io" ng-controller="HomeCtrl">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <div class="navbar-brand brand-name">
-          <a href="#">dlipdhunter.github.io</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <!-- navigation panel -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">dlipdhunter.github.io</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-main">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#projects">Projects</a></li>
 
-  <div class="container margin-top-70">
-    <h3>My repositories</h3>
-    <div class="row section" ng-repeat="repo in Repos"> 
-      <div class="col-md-12 col-sm-12">
-        <h3 class="section-header">
-          <span ng-bind="repo.title"></span>
-          <a title="Open repo on github" class="pull-right" ng-href={{repo.link}}><span class="glyphicon glyphicon-open"></span></a>
-        </h3>
-        <span class="section-desc" ng-bind="repo.description"></span>
-          
-      </div>
-    </div>
-  </div>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+<!-- first section - About -->
+<div id="about" class="about">
+<div class="text-vcenter">
+  <img class="profile-pic" src="https://s.gravatar.com/avatar/f41a1ed14a7fd90a5024ac9cf75729db?s=200" />
+<h1>Dillip kumar</h1>
+<h3>Software Engineer</h3>
+<h5>.Net Technologies, NodeJS, AngularJS 1.x</h5>
+<div class="button-group">
+<a href="#projects" class="btn btn-default btn-sm">Projects</a>
+<a class="github-button" href="https://github.com/dlipdhunter" data-size="large" data-show-count="true" aria-label="Follow @dlipdhunter on GitHub">Follow @dlipdhunter</a>
+</div>
 
 
+</div>
+</div>
+<!-- /first section -->
+
+<!-- second section - Projects -->
+<div id="projects" class="pad-section">
+<div class="container">
+<div class="row">
+  <div class="col-sm-12">
+    <h3>Projects</h3>
+  </div>  
+</div>
+<div class="row" ng-repeat="repo in Repos">
+<div class="col-sm-2">
+  <a class="btn btn-default btn-sm" ng-href={{repo.link}}>View source</a>
+</div>
+<div class="col-sm-10 text-center">
+<h4 ng-bind="repo.title"></h4>
+<p class="lead" ng-bind="repo.description"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- /second section -->
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
